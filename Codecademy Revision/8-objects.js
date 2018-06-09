@@ -39,7 +39,7 @@ if (time < 11) { // 11 am
   meal = 'lunch';
 }
 
-console.log(restaurantSpecials[meal]); // here we pass in the variable since we areusing bracket notaton
+console.log(restaurantSpecials[meal]); // here we pass in the variable since we are using bracket notaton
 
 // Objects are mutable, even if you save an object to a const variable
 

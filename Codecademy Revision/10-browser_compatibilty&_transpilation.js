@@ -6,7 +6,7 @@
 caniuse.com — A website that provides data on web browser compatibility for HTML, CSS, and JavaScript features.
 use it to look up ES6 feature support.
 Babel — A Javascript library that you can use to convert new, unsupported JavaScript (ES6), 
-nto an older version (ES5) that is recognized by most modern browsers.
+to an older version (ES5) that is recognized by most modern browsers.
 
 Because ES6 is predictably backwards compatible, a collection of JavaScript programmers developed a JavaScript
 library called Babel that transpiles ES6 JavaScript to ES5.

@@ -61,11 +61,11 @@ switch (groceryItem) {
     break;
   case 'lime':
     console.log('Limes are $1.49');
-    break; // prevent further execution of code once the condition has bee n met
+    break; // prevent further execution of code once the condition has been met
   case 'papaya':
     console.log('Papayas are $1.29');
     break; 
-  default: // behave s like an else
+  default: // behaves like an else
     console.log('Invalid item');
     break;
 }

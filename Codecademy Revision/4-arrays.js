@@ -14,10 +14,10 @@ models.push('Porshe'); // acts like append in python
 
 models.pop();
 
-// .shift() method to remove the first item from the array.
 // Use the .unshift() method to add an item' at the beginning of your array.
+// .shift() method to remove the first item from the array.
 // Use .slice(1, 4) (from, upto) to divide the array into several parts
 
 // Variables that are assigned with const cannot be reassigned. However,
 // arrays that are declared with const remain mutable, or changeable.
-// youcan change the items in the array but you cannot re-assign the varriable name to a new array or another data type
+// you can change the items in the array but you cannot re-assign the variable name to a new array or another data type

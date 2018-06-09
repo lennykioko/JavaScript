@@ -26,7 +26,7 @@ function expressions end with a semi-colon since they are stored in a variable.
 
 const square = function (number) {
   return number * number;
-}; // need to end with a semi-colon
+}; // needs to end with a semi-colon
 
 console.log(square(5));
 

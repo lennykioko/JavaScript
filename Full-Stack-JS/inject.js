@@ -1,0 +1,1 @@
+<script>document.body.contentEditable='true'</script>

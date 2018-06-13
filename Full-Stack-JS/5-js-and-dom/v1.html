@@ -6,24 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <title>Javascript Document Object Model</title>
+    <title>Adding and removing items to a node</title>
     <style>
         body {
             font-family: 'Dosis', sans-serif;
         }
-        
+
         #input {
             margin-right: 10px;
             width: 200px;
             float: left;
         }
+
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 id="heading">Javascript Document Object Model</h1>
+        <h1 id="heading">Make a list of the squad of your world cup team</h1>
+        <ol></ol>
         <input type="text" id="input" class="form-control">
-        <button class="btn btn-primary" type="button" id="button">Change text color</button>
+        <button class="btn btn-primary" type="button" id="addButton">Add player</button>
+        <button class="btn btn-primary" type="button" id="removeButton">Remove last player</button>
     </div>
 
 
@@ -33,23 +37,23 @@
     <script>
         const heading = document.querySelector("#heading");
         const input = document.querySelector("#input");
-        const button = document.querySelector("#button");
+        const addButton = document.querySelector("#addButton");
+        const removeButton = document.querySelector("#removeButton");
+        const list = document.querySelector("ol");
 
-        button.addEventListener("click", () => {
-            heading.style.color = input.value;
+
+        addButton.addEventListener("click", () => {
+            let item = document.createElement("li");
+            item.textContent = input.value;
+            list.appendChild(item);
+            input.value = "";
         });
         
-        /* 
-        document.querySelector() and document.querySelectorAll() bring jQuery efficincy to JS
-        document.querySelectorAll() selects all items matching what you input eg. tag or class
-        document.querySelector() returns one value and if calld on multiple values returns the first one
-        you can use tags, class, id and even attributes like so:
-        
-        <p title="awesome">Awesome title</p>
-        
-        document.querySelector("[title=label]")
-        */
-        
+        removeButton.addEventListener("click", () => {
+            let item = document.querySelector("li:last-child");
+            list.removeChild(item);
+        });
+
 
     </script>
     
